@@ -3,5 +3,5 @@
 # ./main
 #--------------------
 
-data modify storage later:data tasks[-1].targets append value {}
-data modify storage later:data tasks[-1].targets[-1].uuid set from entity @s UUID
+data modify storage later:in delay.uuids append value {}
+data modify storage later:in delay.uuids[-1].uuid set from entity @s UUID
