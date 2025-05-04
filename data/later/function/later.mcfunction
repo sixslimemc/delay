@@ -1,6 +1,5 @@
-#> later : selector/delay
+#> later : later
 #--------------------
-# -> selector: $selector
 # -> command: $command
 # -> ticks: int
 # ~> data? any
@@ -9,9 +8,12 @@
 # <- result: TaskID
 #--------------------
 # TODO: description
+# this is the "self" later.
 #--------------------
 # 1: success.
 # 0: invalid value for <ticks>.
 #--------------------
 
-return run function later:_/impl/selector/delay/main with storage later:in delay.selector
+data merge storage later:in {later:{uuids:[{}]}}
+data modify storage later:in later.uuids[0].uuid set from entity @s UUID
+return run function later:uuids/later

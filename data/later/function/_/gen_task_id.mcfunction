@@ -1,6 +1,6 @@
 #> later:_/gen_task_id
 #--------------------
-# ./impl/selector/delay/main
+# ./impl/selector/later/main
 #--------------------
 
 scoreboard players add *task_id _later 1
