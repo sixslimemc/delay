@@ -16,7 +16,7 @@
 
 
 # valid ticks check:
-execute store result score *x _later run data get storage delay:in delay.ticks
+execute store result score *x _later run data get storage later:in delay.ticks
 execute unless score *x _later matches 1.. run return 0
 
 # append task:
