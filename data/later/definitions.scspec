@@ -1,0 +1,9 @@
+
+Task := {
+    command: $command
+    time: int
+    data: any
+    task_id: TaskID
+    targets[]? {uuid: uuid}
+    failsafe? $command
+}
