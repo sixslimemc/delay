@@ -5,7 +5,7 @@
 
 data modify storage slimecore:in manifest.pack set value "delay"
 data modify storage slimecore:in manifest.version set value {major:1, minor:0, patch:0}
-data modify storage slimecore:in manifest.display.name set value ""
+data modify storage slimecore:in manifest.display.name set value "Delay"
 data modify storage slimecore:in manifest.display.summary set value ""
 data modify storage slimecore:in manifest.url set value ""
 data modify storage slimecore:in manifest.author set value {name:"SixSlime", url:"https://github.com/sixslime"}
