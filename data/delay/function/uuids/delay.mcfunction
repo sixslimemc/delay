@@ -1,6 +1,6 @@
 #> delay : uuids/delay
 #--------------------
-# -> uuids: $selector
+# -> uuids: {uuid: uuid}
 # -> command: $command
 # -> ticks: int
 # ~> data? any
