@@ -5,7 +5,7 @@
 # ~> data? any
 # ~> failsafe? $command
 #--------------------
-# <- result: TaskID
+# <- task_id: TaskID
 #--------------------
 # TODO: description
 # this is the "self" delay.
