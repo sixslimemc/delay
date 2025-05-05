@@ -10,8 +10,8 @@
 # TODO: description
 # this is the "self" delay.
 #--------------------
-# 1: success.
-# 0: invalid value for <ticks>.
+# 0..: success; gametime that this task is scheduled to execute.
+# -1: invalid value for <ticks>.
 #--------------------
 
 data merge storage delay:in {delay:{uuids:[{}]}}

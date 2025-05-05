@@ -10,8 +10,8 @@
 #--------------------
 # TODO: description
 #--------------------
-# 1: success.
-# 0: invalid value for <ticks>.
+# 0..: success; gametime that this task is scheduled to execute.
+# -1: invalid value for <ticks>.
 #--------------------
 
 data remove storage delay:out delay

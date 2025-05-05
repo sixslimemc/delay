@@ -10,14 +10,14 @@
 #--------------------
 # TODO: description
 #--------------------
-# 1: success.
-# 0: invalid value for <ticks>.
+# 0..: success; gametime that this task is scheduled to execute.
+# -1: invalid value for <ticks>.
 #--------------------
 
 
 # valid ticks check:
 execute store result score *x _delay run data get storage delay:in delay.ticks
-execute unless score *x _delay matches 1.. run return 0
+execute unless score *x _delay matches 1.. run return -1
 
 # append task:
 data modify storage delay:data tasks append value {}
@@ -33,4 +33,4 @@ data modify storage delay:data tasks[-1].data set from storage delay:in delay.da
 data modify storage delay:data tasks[-1].failsafe set from storage delay:in delay.failsafe
 data modify storage delay:data tasks[-1].targets set from storage delay:in delay.uuids
 
-return 1
+return run data get storage delay:data tasks[-1].time
