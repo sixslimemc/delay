@@ -1,4 +1,5 @@
+use ::delay::mcdoc::def::Task
 
 dispatch minecraft:storage[delay:data] to struct Data {
-
+    tasks: [Task]
 }

@@ -1,0 +1,7 @@
+use ::delay::mcdoc::def::TaskId
+
+struct In {
+    task_id: TaskId
+}
+
+struct Out {}

@@ -1,3 +1,5 @@
+use ::delay::mcdoc::def::Command
+use ::delay::mcdoc::def::Uuid
 
 struct VariableRegister {
     [string]: any

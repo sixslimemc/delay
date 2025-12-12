@@ -1,0 +1,12 @@
+use ::delay::mcdoc::def::Uuid
+use ::delay::mcdoc::def::CommonIn
+use ::delay::mcdoc::def::CommonOut
+
+struct In {
+    uuids: [struct {uuid: Uuid}],
+    ...CommonIn
+}
+
+struct Out {
+    ...CommonOut
+}

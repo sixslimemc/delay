@@ -1,0 +1,11 @@
+use ::delay::mcdoc::def::CommonIn
+use ::delay::mcdoc::def::CommonOut
+
+struct In {
+    selector: #[selector] string,
+    ...CommonIn
+}
+
+struct Out {
+    ...CommonOut
+}

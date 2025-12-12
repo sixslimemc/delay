@@ -1,0 +1,25 @@
+
+type Gametime = int
+type TaskId = int
+type Uuid = #[uuid] [int] @ 4
+type Command = #[command] string
+
+struct Task {
+    command: Command,
+    targets: [Uuid],
+    time: Gametime,
+    task_id: TaskId,
+    data?: any,
+    failsafe?: Command,
+}
+
+struct CommonIn {
+    command: Command,
+    ticks: int,
+    data?: any,
+    failsafe?: Command,
+}
+
+struct CommonOut {
+    task_id: TaskId
+}

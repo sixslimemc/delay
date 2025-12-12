@@ -1,0 +1,10 @@
+use ::delay::mcdoc::def::CommonIn
+use ::delay::mcdoc::def::CommonOut
+
+struct In {
+    ...CommonIn
+}
+
+struct Out {
+    ...CommonOut
+}
