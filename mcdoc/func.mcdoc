@@ -1,16 +1,8 @@
 
-dispatch minecraft:storage[slimecore:in] to struct In {
+dispatch minecraft:storage[delay:in] to struct In {
 
 }
 
-dispatch minecraft:storage[slimecore:out] to struct Out {
-
-}
-
-dispatch minecraft:storage[delay:abstract/in] to struct AbstractIn {
-
-}
-
-dispatch minecraft:storage[delay:abstract/out] to struct AbstractOut {
+dispatch minecraft:storage[delay:out] to struct Out {
 
 }
