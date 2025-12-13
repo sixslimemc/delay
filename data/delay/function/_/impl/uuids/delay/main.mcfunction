@@ -9,7 +9,7 @@ execute unless score *x _delay matches 1.. run return -1
 data modify storage delay:_ x.task set value {}
 
 # schedule trigger:
-$execute store result storage delay:data x.task.time int 1 run schedule function delay:_/main/task/trigger $(ticks)t append
+$execute store result storage delay:_ x.task.time int 1 run schedule function delay:_/main/task/trigger $(ticks)t append
 
 execute store result storage delay:out delay.task_id int 1 run function delay:_/main/gen_task_id
 
