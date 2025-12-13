@@ -1,8 +1,10 @@
 
 dispatch minecraft:storage[delay:in] to struct In {
-    delay: (super::function::delay::In | super::function::uuids::delay::In | super::function::selector::delay::In)
+    delay: (super::function::delay::In | super::function::uuids::delay::In | super::function::selector::delay::In),
+    cancel: (super::function::cancel::In),
 }
 
 dispatch minecraft:storage[delay:out] to struct Out {
-    delay: (super::function::delay::Out | super::function::uuids::delay::Out | super::function::selector::delay::Out)
+    delay: (super::function::delay::Out | super::function::uuids::delay::Out | super::function::selector::delay::Out),
+    cancel: (super::function::cancel::Out),
 }
