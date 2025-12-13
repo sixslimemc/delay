@@ -13,10 +13,11 @@ $execute store result storage delay:data tasks[-1].time int 1 run schedule funct
 
 execute store result storage delay:out delay.task_id int 1 run function delay:_/main/gen_task_id
 
-data modify storage delay:data tasks[-1].task_id set from storage delay:out delay.task_id
-data modify storage delay:data tasks[-1].command set from storage delay:in delay.command
-data modify storage delay:data tasks[-1].data set from storage delay:in delay.data
-data modify storage delay:data tasks[-1].failsafe set from storage delay:in delay.failsafe
-data modify storage delay:data tasks[-1].targets set from storage delay:in delay.uuids
+data modify storage delay:_ x.task.task_id set from storage delay:out delay.task_id
+data modify storage delay:_ x.task.command set from storage delay:in delay.command
+data modify storage delay:_ x.task.data set from storage delay:in delay.data
+data modify storage delay:_ x.task.failsafe set from storage delay:in delay.failsafe
+data modify storage delay:_ x.task.targets set from storage delay:in delay.uuids
+data modify storage delay:data tasks append from storage delay:_ x.task
 
 return run data get storage delay:data tasks[-1].time
