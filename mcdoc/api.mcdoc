@@ -1,7 +1,12 @@
-
+use ::delay::mcdoc::def::TaskId
+use ::delay::mcdoc::def::Uuid
 
 dispatch minecraft:storage[delay:api] to struct Api {
-
+    this: struct {
+        task_id: TaskId,
+        target: Uuid,
+        data?: any,
+    }
 }
 
 

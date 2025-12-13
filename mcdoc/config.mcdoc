@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[delay:config] to struct Config {
-
-}

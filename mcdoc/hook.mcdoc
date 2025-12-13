@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[delay:hook] to struct Hook {
-
-}
