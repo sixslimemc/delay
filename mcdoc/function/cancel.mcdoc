@@ -5,3 +5,8 @@ struct In {
 }
 
 struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    NoTask = 0,
+}

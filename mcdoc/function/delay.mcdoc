@@ -1,5 +1,6 @@
 use ::delay::mcdoc::def::CommonIn
 use ::delay::mcdoc::def::CommonOut
+use ::delay::mcdoc::def::Gametime
 
 struct In {
     ...CommonIn
@@ -8,3 +9,6 @@ struct In {
 struct Out {
     ...CommonOut
 }
+
+// the gametime the task is scheduled to run at.
+type Return = Gametime
