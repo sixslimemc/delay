@@ -26,6 +26,6 @@ struct CommonOut {
     task_id: TaskId
 }
 
-struct TaskAttachments {
+type TaskAttachments = struct {
 	[#[dispatcher_key="delay:task_attachments"] PackId]?: delay:task_attachments[[%key]],
 }
