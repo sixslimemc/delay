@@ -19,6 +19,7 @@ struct CommonIn {
     ticks: int,
     data?: any,
     failsafe?: Command,
+    attachments?: TaskAttachments,
 }
 
 struct CommonOut {
