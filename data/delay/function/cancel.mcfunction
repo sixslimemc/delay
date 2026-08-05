@@ -1,14 +1,4 @@
 #> delay : cancel
-#--------------------
-# -> task_id: TaskId
-#--------------------
-# .
-#--------------------
-# TODO: description
-#--------------------
-# 1: task cancelled.
-# 0: no task with <task_id> was awaiting execution.
-#--------------------
 
 data remove storage delay:out cancel
 

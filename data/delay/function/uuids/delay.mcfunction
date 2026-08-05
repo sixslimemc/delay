@@ -1,18 +1,4 @@
 #> delay : uuids/delay
-#--------------------
-# -> uuids: [{uuid: Uuid}]
-# -> command: Command
-# -> ticks: int
-# -> data?: any
-# -> failsafe?: Command
-#--------------------
-# <- task_id: TaskId
-#--------------------
-# TODO: description
-#--------------------
-# 0..: success; gametime that this task is scheduled to execute.
-# -1: invalid value for <ticks>.
-#--------------------
 
 data remove storage delay:out delay
 
