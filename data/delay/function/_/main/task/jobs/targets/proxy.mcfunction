@@ -9,6 +9,7 @@ data remove storage delay:api this
 
 data modify storage delay:api this.target set from storage delay:_ t.task.this_target.uuid
 data modify storage delay:api this.data set from storage delay:_ t.task.this_job.data
+data modify storage delay:api this.attachments set from storage delay:_ t.task.this_job.attachments
 data modify storage delay:api this.task_id set from storage delay:_ t.task.this_job.task_id
 
 execute on origin at @s run function delay:_/main/task/jobs/targets/execute with storage delay:_ t.task.this_job
