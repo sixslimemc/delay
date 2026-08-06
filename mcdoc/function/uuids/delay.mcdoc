@@ -1,9 +1,10 @@
 use ::delay::mcdoc::def::Uuid
 use ::delay::mcdoc::def::CommonIn
 use ::delay::mcdoc::def::CommonOut
+use ::delay::mcdoc::def::TaskTarget
 
 struct In {
-    uuids: [struct {uuid: Uuid}],
+    uuids: [TaskTarget],
     ...CommonIn
 }
 

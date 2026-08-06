@@ -5,9 +5,12 @@ type Uuid = #[uuid] [int] @ 4
 type Command = #[command] string
 type PackId = ::slimecore::mcdoc::def::PackId
 
+struct TaskTarget {
+    uuid: Uuid,
+}
 struct Task {
     command: Command,
-    targets: [Uuid],
+    targets: [TaskTarget],
     time: Gametime,
     task_id: TaskId,
     data?: any,
