@@ -2,9 +2,11 @@
 dispatch minecraft:storage[delay:in] to struct In {
     delay: (super::function::delay::In | super::function::targets::delay::In | super::function::selector::delay::In),
     cancel: (super::function::cancel::In),
+    check: super::function::api::check::In,
 }
 
 dispatch minecraft:storage[delay:out] to struct Out {
     delay: (super::function::delay::Out | super::function::targets::delay::Out | super::function::selector::delay::Out),
     cancel: (super::function::cancel::Out),
+    check: super::function::api::check::Out,
 }

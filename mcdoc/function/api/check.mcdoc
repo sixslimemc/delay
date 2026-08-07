@@ -1,0 +1,11 @@
+// checks for tasks that are schedule to run on this tick or in <in ticks>
+use super::super::super::def::Gametime
+
+struct In {
+    // default: 0
+    in_ticks?: int @ 0..,
+}
+
+struct Out {}
+
+type Return = Gametime
