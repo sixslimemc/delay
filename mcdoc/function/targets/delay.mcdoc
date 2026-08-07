@@ -4,7 +4,7 @@ use ::delay::mcdoc::def::CommonOut
 use ::delay::mcdoc::def::TaskTarget
 
 struct In {
-    uuids: [TaskTarget],
+    targets: [TaskTarget],
     ...CommonIn
 }
 

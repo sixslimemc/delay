@@ -1,4 +1,4 @@
-# IMPL > delay:uuids/delay
+# IMPL > delay:targets/delay
 # main
 
 # valid ticks check:
@@ -16,7 +16,7 @@ data modify storage delay:_ x.task.task_id set from storage delay:out delay.task
 data modify storage delay:_ x.task.command set from storage delay:in delay.command
 data modify storage delay:_ x.task.data set from storage delay:in delay.data
 data modify storage delay:_ x.task.failsafe set from storage delay:in delay.failsafe
-data modify storage delay:_ x.task.targets set from storage delay:in delay.uuids
+data modify storage delay:_ x.task.targets set from storage delay:in delay.targets
 data modify storage delay:_ x.task.attachments set from storage delay:in delay.attachments
 data modify storage delay:data tasks append from storage delay:_ x.task
 
