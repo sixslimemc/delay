@@ -1,6 +1,7 @@
 #> delay:_/main/task/trigger
 #--------------------
-# @scheduled : _/impl/targets/delay/main
+# _/main/schedule_handler/schedules/immediate
+# @scheduled : _/main/schedule_handler/schedules/scheduled
 #--------------------
 
 execute store result storage delay:_ t.task.current_time int 1 run time query gametime
