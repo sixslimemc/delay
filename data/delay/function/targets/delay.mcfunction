@@ -2,7 +2,7 @@
 
 data remove storage delay:out delay
 
-execute store result score *x _delay run function delay:_/impl/targets/delay/main with storage delay:in delay
+execute store result score *x _delay run function delay:_/impl/targets/delay/main
 
 data remove storage delay:_ v.delay
 data remove storage delay:in delay

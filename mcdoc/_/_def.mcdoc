@@ -13,6 +13,9 @@ dispatch minecraft:storage[delay:_] to struct {
     u: VariableRegister,
     /// in-scope temp
     x: VariableRegister,
+    data: struct PrivateData {
+        schedules: [int @ 1..],
+    }
 }
 dispatch minecraft:storage[delay:_/in] to struct {
     [any]: any
