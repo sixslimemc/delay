@@ -11,4 +11,4 @@ execute if data storage delay:_ data.schedules[0] run function delay:_/main/sche
 scoreboard players reset *schedule.ticks _delay
 scoreboard players reset *schedule.immediate_executed _delay
 data remove storage delay:_ data.schedules
-data remove storage delay:_ t.schedule
+# data remove storage delay:_ t.schedule
