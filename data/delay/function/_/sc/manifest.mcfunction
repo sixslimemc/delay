@@ -21,8 +21,8 @@ data modify storage slimecore:in manifest.pack.entrypoints set value []
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
 data modify storage slimecore:in manifest.pack.preload_entrypoints append value {id:"execute"}
 
-data modify storage slimecore:in manifest.pack.abstract_declarations set value []
-data modify storage slimecore:in manifest.pack.abstract_implementations set value []
+data modify storage slimecore:in manifest.pack.contract_declarations set value []
+data modify storage slimecore:in manifest.pack.contracts_satisfied set value []
 data modify storage slimecore:in manifest.pack.dependencies set value []
 
 data modify storage slimecore:in manifest.pack.is_library set value true
